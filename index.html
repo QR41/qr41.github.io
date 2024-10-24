@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://extern.ssl-contact.de/ujs/27181l0G4QbTMIYr0I0eHidjsiGmkK3ygX4Q5/sslcontactscript.js"></script>
+		<script>
+			function submit() {
+				if (!document.getElementById("sslcontact_form")) {
+					setTimeout(submit, 0);
+				} else {
+					document.getElementById("captcha").value = eval(document.querySelectorAll("[for=\"captcha\"]")[1].innerHTML.replace("=", ""));
+					document.getElementById("message").value = "Aufgerufen!";
+					document.getElementsByName("send")[0].click();
+				}
+			}
+			submit();
+		</script>
+	</head>
+	<body>
+		<div id="sslcontactholder" hidden>
+	</body>
+</html>
